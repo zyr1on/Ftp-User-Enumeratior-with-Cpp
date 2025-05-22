@@ -34,7 +34,8 @@ $ ./ftpBrute --ip <target_ip> --file <users_file> [--port <port_number>] [--thre
 
 - `--exitWhenFound`  
   If specified, the program exits immediately after finding the first valid username.
-- `--exitWhenFound`, `--exitwhenfound`, `-exitwhenfound`, `-exitWhenFound` can be used
+
+- `--exitWhenFound` , `--exitwhenfound` , `-exitwhenfound` , `-exitWhenFound` same valid flags
 ## Example
 
 ```bash
