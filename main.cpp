@@ -4,8 +4,12 @@
 #include <vector>
 #include <string>
 #include <cstdlib>
+#include <ctime>
 
 int main(int argc, char* argv[]) {
+    std::time_t start = std::time(nullptr);
+    std::cout << "Started at: " << std::ctime(&start);
+
     std::string ip, filename;
     int port = 21;
     int threads = 4;
@@ -30,6 +34,8 @@ int main(int argc, char* argv[]) {
         std::cerr << "[-] File cannot opened: " << filename << "\n";
         return 1;
     }
+    std::cout << "TARGET: " << ip <<  " PORT: " << port  << " FILE: " << filename << " THREAD: " << threads << "\n" <<  std::endl;
+
 
     std::vector<std::string> users;
     std::string line;
@@ -51,6 +57,12 @@ int main(int argc, char* argv[]) {
     else {
         std::cout << "\nNO VALID USER.\n";
     }
+
+    std::time_t end = std::time(nullptr);
+    std::cout << "\nFinished at: " << std::ctime(&end);
+
+    double duration = std::difftime(end, start);
+    std::cout << "Duration: " << duration << " seconds\n";
 
     return 0;
 }
