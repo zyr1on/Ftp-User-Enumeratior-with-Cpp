@@ -1,6 +1,6 @@
 # FTP Username Enumeration
 
-Multi-threaded FTP user enumerator written in C++ 17. It checks valid usernames on an FTP server by analyzing FTP response codes.
+Multi-threaded vsFTPD user enumerator written in C++ 17. It checks valid usernames on an FTP server by analyzing FTP response codes.
 
 ---
 ## How to Compile
