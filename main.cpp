@@ -25,7 +25,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (ip.empty() || filename.empty()) {
-        std::cerr << "Usage:\n ./ftp_user_enum --ip <ip> --file <file> [--port <port>] [--thread <N>] [--exitWhenFound]\n\ndefault port: 21 | default thread:4\n";
+        std::cerr << "Usage:\n ./ftpBrute  --ip <ip> --file <file> [--port <port>] [--thread <N>] [--exitWhenFound]\n\ndefault port: 21 | default thread:4\n";
         return 1;
     }
 
