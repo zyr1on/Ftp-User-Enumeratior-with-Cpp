@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -pthread
 
-TARGET = ftp_user_enum
+TARGET = ftpBrute 
 
 SRCS = main.cpp \
        FTPClient/FTPClient.cpp \
